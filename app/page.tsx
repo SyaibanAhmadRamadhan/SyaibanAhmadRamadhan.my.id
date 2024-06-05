@@ -38,15 +38,15 @@ export default function Home() {
         <div className="my-16 text-center animate-fade-in">
             <h2 className="text-sm text-zinc-500 ">
                 Hi, I&apos;m Rama! I studied System Information at the University Bina
-                Sarana Informatika, and I&apos;m currently working at{" "}
-                <Link href="https://www.kompit.com" isExternal>
+                Sarana Informatika, and I&apos;m currently working at
+                <Link href="https://www.kompit.com" target={"_blank"}>
                     Kompit
-                </Link>{" "}
-                as a{" "}
+                </Link>
+                as a
                 <strong>Junior Backend Engineer</strong>.
             </h2>
             <h2 className="text-sm text-zinc-500 ">
-                I am a <strong> Software Engineer</strong>{" "}
+                I am a <strong> Software Engineer</strong>
                 with more than 1 year of experience. My main focus is to design,
                 develop, and maintain servers, databases, and backend services for
                 software applications. for software applications. My expertise includes

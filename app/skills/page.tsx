@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Navigation } from "../components/nav";
 
-const skillsData = [
+const skillsData:any = [
 	{
 		name: "Hard Skill",
 		category: [
@@ -84,12 +84,12 @@ export default function Skills() {
 	const [selectedCategory, setSelectedCategory] = useState(skillsData[0]);
 	const [expandedCategories, setExpandedCategories] = useState(skillsData[0].category?.map(() => false) || []);
 
-	const handleCategoryClick = (category) => {
+	const handleCategoryClick = (category:any) => {
 		setSelectedCategory(category);
 	};
 
-	const toggleCategory = (index) => {
-		setExpandedCategories((prev) => {
+	const toggleCategory = (index:number) => {
+		setExpandedCategories((prev:any) => {
 			const newExpandedCategories = [...prev];
 			newExpandedCategories[index] = !newExpandedCategories[index];
 			return newExpandedCategories;
@@ -113,7 +113,7 @@ export default function Skills() {
 						onChange={(e) => handleCategoryClick(skillsData[e.target.value])}
 						className="bg-zinc-800 text-zinc-200 border border-zinc-500 rounded p-2 w-full"
 					>
-						{skillsData.map((category, index) => (
+						{skillsData.map((category:any, index:number) => (
 							<option key={category.name} value={index}>
 								{category.name}
 							</option>
@@ -123,7 +123,7 @@ export default function Skills() {
 
 				<div className="hidden md:flex w-full h-full space-x-8">
 					<div className="w-1/4 space-y-4">
-						{skillsData.map((category) => (
+						{skillsData.map((category:any) => (
 							<button
 								key={category.name}
 								onClick={() => handleCategoryClick(category)}
@@ -148,7 +148,7 @@ export default function Skills() {
 										Collapse All
 									</button>
 								</div>
-								{selectedCategory.category.map((subCat, index) => (
+								{selectedCategory.category.map((subCat:any, index:number) => (
 									<div key={subCat.name}>
 										<button
 											onClick={() => toggleCategory(index)}
@@ -158,7 +158,7 @@ export default function Skills() {
 										</button>
 										{expandedCategories[index] && (
 											<ul className="list-disc ml-5 space-y-2 text-sm mb-4">
-												{subCat.skills.map((skill, skillIndex) => (
+												{subCat.skills.map((skill:any, skillIndex:number) => (
 													<li key={skillIndex}>{skill}</li>
 												))}
 											</ul>
@@ -168,7 +168,7 @@ export default function Skills() {
 							</>
 						) : (
 							<ul className="list-disc ml-5 space-y-2 text-sm">
-								{selectedCategory.skills.map((skill, index) => (
+								{selectedCategory.skills.map((skill:any, index:number) => (
 									<li key={index}>{skill}</li>
 								))}
 							</ul>
@@ -186,7 +186,7 @@ export default function Skills() {
 								Collapse All
 							</button>
 						</div>
-						{selectedCategory.category.map((subCat, index) => (
+						{selectedCategory.category.map((subCat:any, index:number) => (
 							<div key={subCat.name}>
 								<button
 									onClick={() => toggleCategory(index)}
@@ -196,7 +196,7 @@ export default function Skills() {
 								</button>
 								{expandedCategories[index] && (
 									<ul className="list-disc ml-5 space-y-2 text-sm mb-4">
-										{subCat.skills.map((skill, skillIndex) => (
+										{subCat.skills.map((skill:any, skillIndex:number) => (
 											<li key={skillIndex}>{skill}</li>
 										))}
 									</ul>
@@ -210,7 +210,7 @@ export default function Skills() {
 					<div className="md:hidden w-full p-8 bg-zinc-800 rounded-lg text-zinc-200 overflow-auto mt-4">
 						<h2 className="text-lg font-bold mb-4">{selectedCategory.name}</h2>
 						<ul className="list-disc ml-5 space-y-2 text-sm">
-							{selectedCategory.skills.map((skill, index) => (
+							{selectedCategory.skills.map((skill:any, index:number) => (
 								<li key={index}>{skill}</li>
 							))}
 						</ul>

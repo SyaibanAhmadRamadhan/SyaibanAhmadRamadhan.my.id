@@ -9,6 +9,10 @@ import { Eye } from "lucide-react";
 
 const redis = Redis.fromEnv();
 
+const top1Project: string = "go-kafka-pub-sub-email-notif"
+const top2Project: string = "go-web-scraping-with-pagination"
+const top3Project: string = "py-image-recognition"
+
 export const revalidate = 60;
 export default async function ProjectsPage() {
   const views = (
@@ -20,9 +24,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === top1Project)!;
+  const top2 = allProjects.find((project) => project.slug === top2Project)!;
+  const top3 = allProjects.find((project) => project.slug === top3Project)!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(

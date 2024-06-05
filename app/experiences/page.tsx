@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 
-const experiences = [
+const experiences:any = [
 	{
 		company: "Kompit",
 		href: "https://kompit.com",
@@ -35,7 +35,7 @@ const experiences = [
 export default function Experiences() {
 	const [selectedExperience, setSelectedExperience] = useState(experiences[0]);
 
-	const handleExperienceClick = (experience) => {
+	const handleExperienceClick = (experience :any) => {
 		setSelectedExperience(experience);
 	};
 
@@ -53,7 +53,7 @@ export default function Experiences() {
 						onChange={(e) => handleExperienceClick(experiences[e.target.value])}
 						className="bg-zinc-800 text-zinc-200 border border-zinc-500 rounded p-2 w-full"
 					>
-						{experiences.map((experience, index) => (
+						{experiences.map((experience:any, index:any) => (
 							<option key={experience.company} value={index}>
 								{experience.company}
 							</option>
@@ -62,7 +62,7 @@ export default function Experiences() {
 				</div>
 				<div className="hidden md:flex w-full h-full space-x-8">
 					<div className="w-1/4 space-y-4">
-						{experiences.map((experience) => (
+						{experiences.map((experience:any) => (
 							<button
 								key={experience.company}
 								onClick={() => handleExperienceClick(experience)}
@@ -85,7 +85,7 @@ export default function Experiences() {
 						</h2>
 						<p className="text-sm mb-2">{selectedExperience.duration}</p>
 						<ul className="list-disc ml-5 space-y-2 text-sm">
-							{selectedExperience.description.map((desc, index) => (
+							{selectedExperience.description.map((desc:any, index:any) => (
 								<li key={index}>{desc}</li>
 							))}
 						</ul>
@@ -100,7 +100,7 @@ export default function Experiences() {
 					</h2>
 					<p className="text-sm mb-2">{selectedExperience.duration}</p>
 					<ul className="list-disc ml-5 space-y-2 text-sm">
-						{selectedExperience.description.map((desc, index) => (
+						{selectedExperience.description.map((desc:any, index:any) => (
 							<li key={index}>{desc}</li>
 						))}
 					</ul>

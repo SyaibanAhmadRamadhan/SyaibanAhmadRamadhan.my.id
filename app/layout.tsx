@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "SyaibanAhmadRamadhan",
+    title: "ibanrmaa",
     card: "summary_large_image",
   },
   icons: {
