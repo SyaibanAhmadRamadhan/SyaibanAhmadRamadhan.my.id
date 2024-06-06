@@ -10,7 +10,7 @@ import { Eye } from "lucide-react";
 const redis = Redis.fromEnv();
 
 const top1Project: string = "go-kafka-pub-sub-email-notif"
-const top2Project: string = "go-web-scraping-with-pagination"
+const top2Project: string = "go-speech-recognition-vosk"
 const top3Project: string = "py-image-recognition"
 
 export const revalidate = 60;
