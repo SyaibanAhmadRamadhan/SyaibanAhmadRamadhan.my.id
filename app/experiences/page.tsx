@@ -5,17 +5,28 @@ import { Navigation } from "../components/nav";
 
 const experiences:any = [
 	{
+		company: "PP Pemuda Persis",
+		href: "https://www.persis.or.id/",
+		position: "Backend Developer",
+		duration: "Jun 2024 – Present",
+		description: [
+			"volunteers to create applications kominfo pemuda persis.",
+		],
+	},
+	{
 		company: "Kompit",
 		href: "https://kompit.com",
 		position: "Junior Backend Engineer",
 		duration: "Jan 2024 – Present",
 		description: [
-			"Clean code implementation with proper coding standards, Unit testing to ensure code reliability, Code review processes for quality assurance, and Refactoring for code optimization and maintainability.",
-			"Management and development of features for an academic platform, core competition features including multiple sports branches, and Handling various fintech features.",
-			"ETL (Extract, Transform, Load) processes using Go and AWS SNS SQS.",
-			"Push notifications implementation using Go, AWS SNS SQS, and Expo push notifications.",
-			"Migration of existing API from legacy code to modern codebase.",
-			"success in achieving development speed in the backed division",
+			"success in achieving development speed in the backed division.",
+			"Clean Code Practices: We write clean, maintainable code, perform unit testing, conduct thorough code reviews, and engage in continuous refactoring to ensure the highest quality.",
+			"Management and development Academy Features: Efficiently handle and manage features for educational platforms.",
+			"Management and development Core Competition Features: Manage competition-related features, including support for various sports.",
+			"Management and development Fintech Features: Develop and manage financial technology functionalities.",
+			"ETL Processes: Utilize Go and AWS (SNS, SQS) for efficient ETL (Extract, Transform, Load) operations.",
+			"Push Notifications: Implement push notifications using Go, AWS (SNS, SQS), and Expo Push Notifications for real-time updates.",
+			"API Migration: Transition existing APIs from legacy code to a modern, scalable codebase.",
 		],
 	},
 	{
@@ -26,8 +37,10 @@ const experiences:any = [
 		description: [
 			"As a freelance developer and co-founder of Jasanya.tech, a software house established with other colleagues.",
 			"Building applications from scratch and maintaining existing ones.",
-			"Developing GraphQL APIs specifically designed to retrieve data from microservices, catering to the needs of frontend interactions with the microservices architecture.",
-			"Writing clean code and performing comprehensive unit testing to ensure application quality.",
+			"Clean Code Development: We write clean, maintainable code to ensure the longevity and scalability of your applications.",
+			"Multilingual Database Design: We design databases that support multiple languages to cater to a global audience.",
+			"GraphQL API Creation: We create efficient GraphQL APIs for your service pages, enhancing data retrieval and interaction.",
+			"Application Deployment: We deploy applications on VPS or hosting services using technologies like Nginx and Docker for optimal performance and reliability.",
 		],
 	},
 ];
