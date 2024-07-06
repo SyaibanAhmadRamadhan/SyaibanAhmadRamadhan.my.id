@@ -8,11 +8,11 @@ const skillsData:any = [
 		category: [
 			{
 				name: "Programming Languages",
-				skills: ["Golang", "PHP", "Python", "Java"],
+				skills: ["Golang (Advance)", "PHP (Intermediate)", "Python (Beginner)", "Java (Beginner)"],
 			},
 			{
 				name: "Frameworks",
-				skills: ["Gin", "Echo", "Fiber", "Laravel", "Codeigniter 4"],
+				skills: ["Gin (Advance)", "Echo (Advance)", "Fiber (Advance)", "Laravel (Advance)", "Codeigniter 4 (Intermediate)"],
 			},
 			{
 				name: "Databases",
